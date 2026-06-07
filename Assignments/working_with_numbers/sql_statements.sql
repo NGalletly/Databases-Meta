@@ -23,3 +23,8 @@ CREATE TABLE address_table(customer_id INT NOT NULL, street VARCHAR(50) NOT NULL
 /* MIXED DATA TYPES */
 CREATE TABLE invoice(full_name VARCHAR(50) NOT NULL, order_date DATE, Quantity INT, price DECIMAL);
 CREATE TABLE customer_account(account_number INT NOT NULL, phone_number VARCHAR(14) NOT NULL, email VARCHAR(50) NOT NULL);
+
+/* ALTER */
+ALTER TABLE table_name ADD (column_name DATA TYPE)
+
+ALTER TABLE customer_account(nickname VARCHAR(50) NOT NULL);
