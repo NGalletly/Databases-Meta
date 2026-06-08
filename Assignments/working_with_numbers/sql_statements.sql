@@ -28,3 +28,32 @@ CREATE TABLE customer_account(account_number INT NOT NULL, phone_number VARCHAR(
 ALTER TABLE table_name ADD (column_name DATA TYPE)
 
 ALTER TABLE customer_account(nickname VARCHAR(50) NOT NULL);
+
+/* INSERT */
+
+INSERT INTO table_name (column1_name,column2_name,column3_name) VALUES (value1,value2,value3);
+
+INSERT INTO table_name (column1_name,column2_name,column3_name) VALUES (value1,value2,value3),(value1,value2,value3),(value1,value2,value3);
+
+INSERT INTO player (name, city) VALUES ("Robert", "Sheffield");
+
+/* SELECT */
+
+SELECT column FROM table_name;
+
+/* INSERT INTO */
+
+INSERT INTO target_tbl (column_name) SELECT column_name FROM source_tbl;
+
+INSERT INTO country(country_name) SELECT country FROM players;
+
+/* UPDATE */
+UPDATE tbl_name SET column_name = "value", colum_name = "value" WHERE ID = "value";
+
+UPDATE tbl_name SET column_name = "value" WHERE column_name = "value";
+
+/* DELETE */
+DELETE FROM tbl_name WHERE column_name = "value";  
+-- DELETE FROM students_tbl WHERE last_name = "miller";
+DELETE FROM tbl_name WHERE column_name = "value";
+-- DELETE FROM students_tbl WHERE department = "engineering";
