@@ -57,3 +57,5 @@ DELETE FROM tbl_name WHERE column_name = "value";
 -- DELETE FROM students_tbl WHERE last_name = "miller";
 DELETE FROM tbl_name WHERE column_name = "value";
 -- DELETE FROM students_tbl WHERE department = "engineering";
+DELETE FROM tbl_name;
+-- DELETE FROM students_tbl;
